@@ -62,8 +62,9 @@ class MimeType extends Mime
 	* @access public
 	* @var string 
 	*/
-	public function __construct($file)
+	public function __construct($file='')
 	{
+		if(!empty($file))
 		return $this->get($file);
 	}
 	/**
